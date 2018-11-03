@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><%= title%></title>
+	<link rel="stylesheet" href="">
+	<% include partials/head.html %>
+</head>
+<body>
+	
+<% include partials/navigation.html %>
+
+<!--CONTACT ME-->
+
+<div class="container p-5">
+	<div class="row">
+		<div class="col-md-4 offset-md-4">
+			<div class="card animated flipInY">
+				<div class="card-header bg-dark text-white text-center">
+					<h3>Contact Me</h3>
+				</div>
+				<div class="card-body">
+					<form action="/contact" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" name="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block">
+								Send Message
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<% include partials/footer.html %>
+
+</body>
+</html>
